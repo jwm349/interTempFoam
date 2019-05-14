@@ -1,0 +1,59 @@
+# 1 "Make/options"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 8 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+
+# 17 "/usr/include/stdc-predef.h" 3 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 8 "<command-line>" 2
+# 1 "Make/options"
+EXE_INC = -I.. 	-I$(FOAM_SRC)/transportProperties/twoPhaseMixture/lnInclude -I$(LIB_SRC)/meshTools/lnInclude -I$(LIB_SRC)/OpenFOAM/lnInclude -I$(LIB_SRC)/finiteVolume/lnInclude -I$(LIB_SRC)/transportModels -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/myIncompressibleTwoPhaseMixture/lnInclude -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/lnInclude -I$(LIB_SRC)/transportModels/interfaceProperties/lnInclude -I$(LIB_SRC)/transportModels/twoPhaseMixture/lnInclude
+# 12 "Make/options"
+
+LIB_LIBS = -ltwoPhaseMixture -lincompressibleTransportModels -limmiscibleIncompressibleTwoPhaseMixture -linterfaceProperties -lfiniteVolume

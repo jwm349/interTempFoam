@@ -1,0 +1,19 @@
+EXE_INC = \
+    -I.. \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/OpenFOAM/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/myIncompressibleTwoPhaseMixture/lnInclude \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/myImmiscibleIncompressibleTwoPhaseMixture \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/myImmiscibleIncompressibleTwoPhaseMixture\lnInclude \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/lnInclude \
+    -I$(LIB_SRC)/transportModels/interfaceProperties/lnInclude \
+    -I$(LIB_SRC)/transportModels/twoPhaseMixture/lnInclude
+
+LIB_LIBS = \
+    -ltwoPhaseMixture \
+    -lincompressibleTransportModels \
+    -limmiscibleIncompressibleTwoPhaseMixture \
+    -linterfaceProperties \
+    -lfiniteVolume

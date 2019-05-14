@@ -1,0 +1,6 @@
+myIncompressibleThreePhaseMixture/myIncompressibleThreePhaseMixture.C
+myThreePhaseInterfaceProperties/myThreePhaseInterfaceProperties.C
+myImmiscibleIncompressibleThreePhaseMixture/myImmiscibleIncompressibleThreePhaseMixture.C
+myInterMixingFoam.C
+
+LIB = $(FOAM_USER_APPBIN)/myInterMixingFoam

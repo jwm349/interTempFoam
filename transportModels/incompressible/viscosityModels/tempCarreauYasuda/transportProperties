@@ -1,0 +1,32 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+transportModel  tempCarreauYasudaCoeffs;
+
+TempCarreauYasudaCoeffs
+{
+    nu0             nu0 [ 0 2 -1 0 0 0 0 ] 7.191; // 5645/rho
+    nuInf           nuInf [ 0 2 -1 0 0 0 0 ] 1.2739e-03; // 1/rho
+    lambda          lambda [ 0 0 1 0 0 0 0 ] 0.28;
+    n               n [ 0 0 0 0 0 0 0 ] 0.61;
+    beta            beta [ 0 0 0 1 0 0 0 ] 6330.0;
+    Tref            Tref [ 0 0 0 1 0 0 0 ] 473.15;
+    a               a [ 0 0 0 0 0 0 0 ] 2.0; // can omit as will default to 2
+}
+
+
+// ************************************************************************* //
